@@ -20,5 +20,7 @@ int main() {
   printf("GNU C Library version, gnu_get_libc_version(): %s\n", gnu_get_libc_version());
   printf("GNU C Library version, _CS_GNU_LIBC_VERSION(): %s\n", glibc_version);
 
+  free(glibc_version);
+
   return 0;
 }
