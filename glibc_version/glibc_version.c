@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <gnu/libc-version.h>
 
 #ifdef __GLIBC__
-#include <unistd.h>
+  #include <unistd.h>
+  #include <gnu/libc-version.h>
 #endif
 
 const char *gnu_get_libc_version(void);
