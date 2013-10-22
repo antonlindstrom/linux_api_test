@@ -6,12 +6,15 @@
 
 int main() {
   char buffer[MAX_READ];
+  ssize_t numRead;
 
-  if (read(STDIN_FILENO, buffer, MAX_READ) == -1) {
+  numRead = read(STDIN_FILENO, buffer, MAX_READ);
+  if (numRead == -1) {
     printf("Error: read\n");
     exit(EXIT_FAILURE);
   }
 
+  buffer[numRead] = '\0';
   printf("The input data was: %s\n", buffer);
 
   return 0;
