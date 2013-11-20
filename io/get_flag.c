@@ -41,4 +41,6 @@ int main(int argc, char *argv[]) {
     printf("Writes are O_APPEND\n");
 
   close(fd);
+
+  exit(EXIT_SUCCESS);
 }
