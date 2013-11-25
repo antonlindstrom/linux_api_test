@@ -17,5 +17,5 @@ int main() {
   buffer[numRead] = '\0';
   printf("The input data was: %s\n", buffer);
 
-  return 0;
+  exit(EXIT_SUCCESS);
 }
