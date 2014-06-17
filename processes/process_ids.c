@@ -10,5 +10,5 @@ int main(void) {
   printf("PID: %ld\n", (long) mypid);
   printf("PPID: %ld\n", (long) parentpid);
 
-   return 0;
+  return 0;
 }
